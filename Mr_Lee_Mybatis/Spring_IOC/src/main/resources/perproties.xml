@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="AccountServer" class="com.redstar.server.impl.AccountServerImpl">
+        <property name="str">
+            <array>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </array>
+        </property>
+
+        <property name="list">
+            <list>
+                <value>AAA</value>
+                <value>CCC</value>
+                <value>BBB</value>
+            </list>
+        </property>
+        <property name="map">
+            <map>
+                <entry key="1" value="aaa"></entry>
+                <entry key="2" value="bbb"></entry>
+                <entry key="3" value="ccc"></entry>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="2020-01-01" class="java.util.Date"></bean>
+
+    <bean id="aa" class="com.redstar.server.impl.AccountServerImpl2">
+        <property name="name" value="ienao2"></property>
+        <property name="age" value="182"></property>
+        <property name="date" ref="2020-01-01"></property>
+    </bean>
+
+
+</beans>
+
