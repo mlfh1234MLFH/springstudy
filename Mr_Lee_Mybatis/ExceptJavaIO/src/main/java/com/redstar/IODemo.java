@@ -16,9 +16,10 @@ public class IODemo {
         show();
     }
 
+    /**
+     * ienao
+     */
     private static void show() {
-
-
         FileInputStream fis = null;
         try {
             fis = new FileInputStream("D:\\data\\upload\\aa.txt");
@@ -27,7 +28,5 @@ public class IODemo {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }
